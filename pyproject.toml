@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "biogpt"
+version = "0.1.0"
+description = ""
+authors = ["Mohamed MKAOUAR <mohamed_mkaouar@carrefour.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^1.5.3"
+transformers = "^4.26.1"
+sacremoses = "^0.0.53"
+torch = "^1.13.1"
+streamlit = "^1.19.0"
+deep-translator = "^1.10.1"
+langdetect = "^1.0.9"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+notebook = "^6.5.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
