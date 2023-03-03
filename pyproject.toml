@@ -6,7 +6,7 @@ authors = ["Mohamed MKAOUAR <mohamed_mkaouar@carrefour.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9.16"
 pandas = "^1.5.3"
 transformers = "^4.26.1"
 sacremoses = "^0.0.53"
