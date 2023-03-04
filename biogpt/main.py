@@ -8,10 +8,7 @@ from transformers import pipeline
 from helpers.hide_toolbar import hide_toolbars
 from helpers.translator import read_text,detect_language,translate
 
-@st.cache_resource # 👈 Add the caching decorator
 def load_generator():
-    from transformers import pipeline
-    from transformers import BioGptTokenizer, BioGptForCausalLM
     model = BioGptForCausalLM.from_pretrained("microsoft/biogpt")
     tokenizer = BioGptTokenizer.from_pretrained("microsoft/biogpt")
     generator = pipeline('text-generation', model=model, tokenizer=tokenizer)
